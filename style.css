@@ -1,0 +1,163 @@
+html{
+    height: 100%;
+    background: #CFD0DA ;
+    user-select : none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+#container{
+    height: 580px;
+    width: 700px;
+    background-color: #E5d7ad;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 20px;
+    position: relative;
+    
+
+    box-shadow: 2px 3px 5px 0px #201335;
+    -webkit-box-shadow: 2px 3px 5px 0px #201335;
+    -moz-box-shadow: 2px 3px 5px 0px #201335;
+}
+#score{
+    background-color: #ec2559;
+    color: 55917f;
+    font-weight: 600;
+    padding: 12px ;
+    border-radius: 5px;
+    position: absolute;
+    left: 630px;
+    font-family: monospace;
+
+    box-shadow: 2px 2px 10px;
+    -webkit-box-shadow: 2px 2px 10px;
+    -moz-box-shadow: 2px 2px 10px;
+}
+
+.count{
+    border-radius: 5px;
+    padding: 12px;
+    font-family: monospace;
+    font-weight: 100;
+    position: absolute;
+
+    display: none;
+    box-shadow: 2px 2px 10px;
+    -webkit-box-shadow: 2px 2px 10px;
+    -moz-box-shadow: 2px 2px 10px; 
+} 
+
+#trialsLeft{
+    background-color: #55917f;
+    left: 40px;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    display: none;
+} 
+.life{
+    height: 20px;
+    width: 20px;
+    margin: 0 6px;
+}
+/* ///////////////////////////// */
+
+#screen{
+    height: 350px;
+    width: 650px;
+    background-color: #fefdf8;
+    margin: 50px auto 20px auto;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 2px 2px 5px;
+    font-size: 110px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 150px;
+    font-family: monospace;  
+    position: relative;
+    overflow: hidden;
+    cursor: url('images/sword.png'), auto;
+}
+#instructionBox{
+    height: 50px;
+    width: 500px;
+    background-color: #44ad99;
+    margin: 5px auto ;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #ec2559;
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.fruit{
+    display: none;
+    position: absolute;
+    cursor: url('images/sword.png'), auto;
+}
+#doubleSword{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    
+}
+
+#startReset{
+    width: 150px;
+    padding: 10px;
+    background-color: #57C4ef;
+    margin-left: 250px;
+    margin-top: 20px;
+    
+    position: relative;
+
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px;
+
+    text-align: center;
+    
+    font-size: 20px;
+    font-weight: 800;
+    font-family: monospace;
+    position: relative;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+#startReset:hover{
+    background-color: #fefdf8;
+    color: 44ad99
+}
+#startReset:active{
+    top: 10px;
+}
+
+#gameOver{
+    height: 220px;
+    width: 500px;
+    background: linear-gradient(#55917f, #fffded);
+    border-radius: 10px;
+    
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: monospace;
+    position: absolute;
+
+    top: 150px;
+    left: 120px;
+    z-index: 2;
+
+    display: none;
+}
